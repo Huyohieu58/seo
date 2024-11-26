@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Sản Phẩm - Giày Thời Trang</title>
+  <meta name="description" content="Chi tiết sản phẩm giày thời trang chất lượng cao và phong cách đa dạng.">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/bootstrap.bundle.js"></script>
+
+  <style>
+    /* Container for product items */
+    .product-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      margin: 0 auto; /* Centering the section */
+      max-width: 1200px; /* Limit the width of the product grid */
+    }
+
+    /* Each product item */
+    .product-item {
+      width: 22%; /* Adjust the width to make items more compact */
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin-bottom: 20px; /* Space at the bottom */
+    }
+
+    /* Image styling */
+    .product-item img {
+      width: 100%;
+      height: 200px; /* Set a fixed height for uniformity */
+      object-fit: cover; /* Ensures images cover the space without distorting */
+      border-radius: 5px;
+    }
+
+    /* Button and link styling */
+    .product-item button, .product-item a {
+      display: inline-block; /* Make sure buttons are inline */
+      width: 100%; /* Make buttons the same width */
+      padding: 12px;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .product-item button:hover, .product-item a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Mobile responsive: smaller screens */
+    @media (max-width: 768px) {
+      .product-item {
+        width: 48%; /* Display 2 items per row */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-item {
+        width: 100%; /* Display 1 item per row */
+      }
+    }
+
+
+    footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px;
+    border: none;
+    background-color: #FF5722;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-bar">
+    <div class="logo">
+      <img src="/images/.png" alt="" style="height: 100px;">
+    </div>
+    <div href="#">Trang Chủ</div>
+    <div href="#">Sản Phẩm</div>
+    <div href="#">Giỏ Hàng</div>
+    <div href="#">Tài Khoản</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Tìm kiếm ngay!" class="search-input">
+      <button class="search-button">&#128269;</button>
+    </div>
+
+  </div>
+
+</header>
+
+<section class="product-details">
+
+  <div class="product-item" id="product-1">
+    <img src="/images/1.jpg" alt="Giày Sneaker Nam Alpha 1">
+    <p>Tên sản phẩm: Giày Sneaker Nam Alpha 1</p>
+    <p>Giá: 1,010,000 VND</p>
+    <p>Mô tả: Giày sneaker nam thiết kế thể thao, phù hợp cho các hoạt động ngoài trời và thể thao.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <!-- Giày Sneaker Nam Alpha 3 -->
+  <div class="product-item" id="product-3">
+    <img src="/images/3.jpg" alt="Giày Sneaker Nam Alpha 3">
+    <p>Tên sản phẩm: Giày Sneaker Nam Alpha 3</p>
+    <p>Giá: 1,030,000 VND</p>
+    <p>Mô tả: Giày thể thao nam phong cách hiện đại, chất liệu thoáng khí, thoải mái suốt ngày dài.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <!-- Giày Boot Nam Zeta -->
+  <div class="product-item" id="product-4">
+    <img src="/images/4.jpg" alt="Giày Boot Nam Zeta">
+    <p>Tên sản phẩm: Giày Boot Nam Zeta</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày boot nam cao cổ, chất liệu da bền bỉ, thích hợp cho mùa đông lạnh giá.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-5">
+    <img src="/images/5.jpg" alt="Giày Casual Nam Orion">
+    <p>Tên sản phẩm: Giày Casual Nam Orion</p>
+    <p>Giá: 1,100,000 VND</p>
+    <p>Mô tả: Giày casual nam phong cách đơn giản, dễ kết hợp với nhiều loại trang phục hàng ngày.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-6">
+    <img src="/images/6.jpg" alt="Giày Thể Thao Nữ Nova">
+    <p>Tên sản phẩm: Giày Thể Thao Nữ Nova</p>
+    <p>Giá: 1,150,000 VND</p>
+    <p>Mô tả: Giày thể thao nữ với thiết kế nhẹ nhàng, giúp bạn tự tin trong mọi hoạt động thể thao.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-7">
+    <img src="/images/7.jpg" alt="Giày Sandal Nữ Harmony">
+    <p>Tên sản phẩm: Giày Sandal Nữ Harmony</p>
+    <p>Giá: 950,000 VND</p>
+    <p>Mô tả: Giày sandal nữ, thoải mái và mát mẻ cho mùa hè, dễ dàng phối hợp với váy hoặc quần.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-8">
+    <img src="/images/8.jpg" alt="Giày Sneaker Nam Delta">
+    <p>Tên sản phẩm: Giày Sneaker Nam Delta</p>
+    <p>Giá: 1,200,000 VND</p>
+    <p>Mô tả: Giày sneaker nam thiết kế thời trang, dễ dàng phối hợp với các trang phục thường ngày.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+
+  <div class="product-item" id="product-9">
+    <img src="/images/9.jpg" alt="Giày Sneaker Nam Đẹp">
+    <p>Tên sản phẩm: Giày Sneaker Nam Đẹp</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày sneaker nam hiện đại, chất liệu cao cấp, mang đến phong cách trẻ trung, năng động.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-10">
+    <img src="/images/10.jpg" alt="Giày Thể Thao Cao Cấp">
+    <p>Tên sản phẩm: Giày Thể Thao Cao Cấp</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày thể thao cao cấp, thiết kế thời trang, phù hợp cho các hoạt động thể thao và đi chơi.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-11">
+    <img src="/images/11.jpg" alt="Giày Boots Nam Cá Tính">
+    <p>Tên sản phẩm: Giày Boots Nam Cá Tính</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày boots nam chất liệu da thật, phong cách mạnh mẽ và cá tính, phù hợp cho các bạn yêu thích sự bụi bặm.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-12">
+    <img src="/images/12.jpg" alt="Giày Dù Chạy Bộ">
+    <p>Tên sản phẩm: Giày Dù Chạy Bộ</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày dù nhẹ nhàng, thoáng khí, thiết kế đặc biệt cho các hoạt động thể thao như chạy bộ, đi bộ.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-13">
+    <img src="/images/13.jpg" alt="Giày Cao Cổ Thể Thao">
+    <p>Tên sản phẩm: Giày Cao Cổ Thể Thao</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày cao cổ thể thao, mang lại sự bảo vệ cho mắt cá chân khi chơi thể thao, thiết kế mạnh mẽ.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-14">
+    <img src="/images/14.jpg" alt="Giày Lười Nam Thanh Lịch">
+    <p>Tên sản phẩm: Giày Lười Nam Thanh Lịch</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày lười nam với thiết kế đơn giản nhưng tinh tế, dễ dàng phối hợp với nhiều loại trang phục.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-15">
+    <img src="/images/15.jpg" alt="Giày Sandal Nam Thoáng Mát">
+    <p>Tên sản phẩm: Giày Sandal Nam Thoáng Mát</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày sandal nam thoáng mát, thích hợp cho mùa hè, tạo cảm giác thoải mái khi di chuyển.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-16">
+    <img src="/images/16.jpg" alt="Giày Da Cao Cấp">
+    <p>Tên sản phẩm: Giày Da Cao Cấp</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày da cao cấp với chất liệu da thật, mang đến sự sang trọng và thanh lịch cho người sử dụng.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-17">
+    <img src="/images/17.jpg" alt="Giày Slip On Nam">
+    <p>Tên sản phẩm: Giày Slip On Nam</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày slip on nam dễ dàng mang vào, mang lại sự tiện lợi và phong cách thời trang cho người sử dụng.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-18">
+    <img src="/images/18.jpg" alt="Giày Thể Thao Chạy Bộ">
+    <p>Tên sản phẩm: Giày Thể Thao Chạy Bộ</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày thể thao chuyên dụng cho chạy bộ, giúp giảm chấn thương và tăng cường hiệu suất khi tập luyện.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-19">
+    <img src="/images/19.jpg" alt="Giày Tây Nam Công Sở">
+    <p>Tên sản phẩm: Giày Tây Nam Công Sở</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày tây nam công sở thanh lịch, phù hợp với trang phục công sở, giúp bạn luôn tự tin trong công việc.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-20">
+    <img src="/images/20.jpg" alt="Giày Boot Nữ Cá Tính">
+    <p>Tên sản phẩm: Giày Boot Nữ Cá Tính</p>
+    <p>Giá: 1,040,000 VND</p>/-strong/-heart:>:o:-((:-h <p>Mô tả: Giày boot nữ cá tính, thiết kế mạnh mẽ nhưng vẫn duy trì sự nữ tính và thanh lịch.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-21">
+    <img src="/images/21.jpg" alt="Giày Converse Nữ">
+    <p>Tên sản phẩm: Giày Converse Nữ</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày Converse nữ với thiết kế trẻ trung, phù hợp cho phong cách năng động, thoải mái.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-22">
+    <img src="/images/22.png" alt="Giày Nữ Thanh Lịch">
+    <p>Tên sản phẩm: Giày Nữ Thanh Lịch</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày nữ thanh lịch, thiết kế đơn giản nhưng vô cùng sang trọng, phù hợp với những buổi tiệc hoặc dạo phố.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-23">
+    <img src="/images/23.png" alt="Giày Nữ Cao Cổ">
+    <p>Tên sản phẩm: Giày Nữ Cao Cổ</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày nữ cao cổ, chất liệu mềm mại, tạo cảm giác ấm áp cho mùa đông.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-24">
+    <img src="/images/24.jpg" alt="Giày Lười Nữ">
+    <p>Tên sản phẩm: Giày Lười Nữ</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày lười nữ, dễ dàng mang vào, thiết kế thời trang cho những buổi đi dạo hoặc thư giãn cuối tuần.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-25">
+    <img src="/images/25.png" alt="Giày Thể Thao Đặc Biệt">
+    <p>Tên sản phẩm: Giày Thể Thao Đặc Biệt</p>
+    <p>Giá: 1,040,000 VND</p>
+    <p>Mô tả: Giày thể thao đặc biệt, mang lại sự thoải mái tối đa cho người sử dụng trong mọi hoạt động thể thao.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+  <div class="product-item" id="product-26">
+    <img src="/images/26.png" alt="Giày Thể Thao Nam Omega">
+    <p>Tên sản phẩm: Giày Thể Thao Nam Omega</p>
+    <p>Giá: 1,260,000 VND</p>
+    <p>Mô tả: Giày thể thao nam chất lượng cao, phù hợp với các môn thể thao như chạy bộ, bóng rổ, hoặc tập gym.</p>
+    <button>Thêm vào giỏ hàng</button>
+    <a href="/home/index">Quay lại trang chủ</a>
+  </div>
+
+</section>
+<footer>
+  <p>&copy; 2024 Cửa Hàng Giày Thời Trang. Thiết kế bởi <strong>Thương Hiệu</strong></p>
+  <div class="social-links">
+    <a href="https://facebook.com" target="_blank">Facebook</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+  </div>
+</footer>
+</body>
+</html>
